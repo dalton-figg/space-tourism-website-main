@@ -7,7 +7,6 @@ body {
 }
 
 .destination {
-
   @include media(640px) {
     padding-top: calculateRem(40);
   }
@@ -29,6 +28,10 @@ body {
   img {
     @include media(tablet) {
       width: 300px;
+      aspect-ratio: 1;
+    }
+    @include media(laptop) {
+      width: 445px;
       aspect-ratio: 1;
     }
   }

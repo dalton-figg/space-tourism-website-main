@@ -17,25 +17,23 @@ $stylesheet = '<link rel="stylesheet" href="css/destination.css" />'
       <h2><a href="destination-europa.php" class="destination__link<?php if ($subpage == 'europa') echo 'destination__link--active' ?>">Europa</a></h2>
       <h2><a href="destination-titan.php" class="destination__link<?php if ($subpage == 'titan') echo 'destination__link--active' ?>">Titan</a></h2>
     </nav>
-    <article>
-      <h3 class='heading-2 text-uppercase'>Moon</h3>
-      <p class='text-blue'>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+    <h3 class='heading-2 text-uppercase'>Moon</h3>
+    <p class='text-blue'>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
 
-      <hr class='page-divider'>
+    <hr class='page-divider'>
 
-      <div class="destination__trip-details | text-uppercase">
-        <div class='destination__trip-detail'>
-          <h4 class='text-blue subheading-2'>Avg. distance</h4>
-          <p class='subheading-1'>384,400 km</p>
-        </div>
-        <div class='destination__trip-detail'>
-          <h4 class='text-blue subheading-2'>EST. Travel time</h4>
-          <p class='subheading-1'>
-            3 days
-          </p>
-        </div>
+    <div class="destination__trip-details | text-uppercase">
+      <div class='destination__trip-detail'>
+        <h4 class='text-blue subheading-2'>Avg. distance</h4>
+        <p class='subheading-1'>384,400 km</p>
       </div>
-    </article>
+      <div class='destination__trip-detail'>
+        <h4 class='text-blue subheading-2'>EST. Travel time</h4>
+        <p class='subheading-1'>
+          3 days
+        </p>
+      </div>
+    </div>
   </div>
 </main>
 </body>
