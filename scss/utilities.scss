@@ -1,0 +1,37 @@
+@import "../scss/helpers/base";
+
+// Typography
+
+.text-blue {
+  color: $clr-blue;
+}
+
+.text-white {
+  color: $clr-white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+@for $i from 1 through 5 {
+  .heading-#{$i} {
+    @extend %heading-#{$i};
+  }
+}
+
+@for $j from 1 through 2 {
+  .subheading-#{$j} {
+    @extend %subheading-#{$j};
+  }
+}
+
+// Position
+
+.m-0auto {
+  margin: 0 auto;
+}

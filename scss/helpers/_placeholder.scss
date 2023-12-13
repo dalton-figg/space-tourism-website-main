@@ -1,0 +1,73 @@
+// Typography - Headings
+
+%heading-1,
+%heading-2,
+%heading-3,
+%heading-4,
+%subheading-1 {
+  font-weight: 400; // fixes issues with the font
+  font-family: $font-secondary;
+}
+
+%heading-1 {
+  @include font-size(80);
+  @include media(tablet-small) {
+    @include font-size(150);
+  }
+}
+
+%heading-2 {
+  @include font-size(56);
+  @include media(tablet) {
+    @include font-size(80);
+  }
+  @include media(laptop) {
+    @include font-size(100);
+  }
+}
+
+%heading-3 {
+  @include font-size(56);
+}
+
+%heading-4 {
+  @include font-size(20);
+
+  @include media(laptop) {
+    @include font-size(32);
+  }
+}
+
+%heading-5 {
+  font-family: $font-primary-dense;
+  letter-spacing: 4.75px;
+  @include font-size(16);
+
+  @include media(tablet-small) {
+    @include font-size(20);
+  }
+  @include media(laptop) {
+    @include font-size(28);
+  }
+}
+
+// Typography - Subheadings
+
+%subheading-1 {
+  @include font-size(28);
+}
+
+%subheading-2 {
+  font-family: $font-primary-dense;
+  letter-spacing: 2.35px;
+  @include font-size(14);
+}
+
+%subheading-nav {
+  font-family: $font-primary-dense;
+  @include font-size(14);
+  letter-spacing: 2.7px;
+  @include media(tablet) {
+    @include font-size(16);
+  }
+}

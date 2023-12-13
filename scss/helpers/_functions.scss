@@ -1,0 +1,7 @@
+@function calculateRem($px, $base: 16) {
+  @return calc($px / $base) * 1rem;
+}
+
+@function adjustOpacity($col, $opacity){
+  @return rgba($col, $opacity)
+}

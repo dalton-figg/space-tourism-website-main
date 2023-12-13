@@ -1,0 +1,46 @@
+@import "../scss/helpers/base";
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $clr-black;
+  color: $clr-white;
+  margin: 0 auto;
+  @include max-width(1440px);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  font-style: italic;
+}
+
+p {
+  @include font-size(15);
+  line-height: calculateRem(25);
+
+  @include media(laptop) {
+    @include font-size(16);
+    line-height: calculateRem(28);
+  }
+
+  @include media(desktop) {
+    @include font-size(18);
+    line-height: calculateRem(32);
+  }
+}

@@ -1,0 +1,108 @@
+body {
+  @include body-image(
+    "/starter-code/assets/destination/background-destination-mobile.jpg",
+    "/starter-code/assets/destination/background-destination-tablet.jpg",
+    "/starter-code/assets/destination/background-destination-desktop.jpg"
+  );
+}
+
+.destination {
+
+  @include media(640px) {
+    padding-top: calculateRem(40);
+  }
+
+  @include media(laptop) {
+    @include two-cols;
+    padding-top: calculateRem(76);
+  }
+}
+
+.destination__image {
+  @include layout(
+    flex,
+    $align: center,
+    $direction: column,
+    $column: 2,
+    $gap: calculateRem(36)
+  );
+  img {
+    @include media(tablet) {
+      width: 300px;
+      aspect-ratio: 1;
+    }
+  }
+
+  @include media(tablet) {
+    @include layout($gap: calculateRem(64));
+  }
+
+  @include media(laptop) {
+    @include layout($gap: calculateRem(100));
+  }
+}
+
+.destination__info {
+  justify-self: end;
+  max-width: 450px;
+
+  @include layout(
+    flex,
+    $direction: column,
+    $justify: center,
+    $align: center,
+    $column: 3,
+    $gap: calculateRem(24)
+  );
+
+  @include media(laptop) {
+    text-align: left;
+    @include layout($gap: calculateRem(32), $align: start);
+  }
+}
+
+.destination__list {
+  @include layout(flex, $gap: calculateRem(16));
+}
+
+.destination__link {
+  position: relative;
+  text-transform: uppercase;
+  @extend %subheading-nav;
+  @include link-reset($clr-blue);
+
+  &--active {
+    color: $clr-white;
+  }
+}
+
+.destination__link:not(.destination__link--active):hover::after {
+  @include styled-underline(
+    $distance: 30px,
+    $background: adjustOpacity($clr-white, 0.5)
+  );
+}
+
+.destination__link--active::after {
+  @include styled-underline($distance: 30px);
+}
+
+.destination__trip-details {
+  @include layout(
+    flex,
+    $align: center,
+    $direction: column,
+    $gap: calculateRem(36)
+  );
+  @include media(tablet) {
+    @include layout($direction: row, $gap: calculateRem(70));
+  }
+}
+
+.destination__trip-detail {
+  @include layout(flex, $direction: column, $gap: calculateRem(16));
+}
+
+.page-divider {
+  @include hr-styles(#383b4b);
+}

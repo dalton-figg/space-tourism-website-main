@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Barlow", "Arial", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0d17;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  font-style: italic;
+}
+
+p {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}
+@media only screen and (min-width: 64em) {
+  p {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+@media only screen and (min-width: 90em) {
+  p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
+
+/*# sourceMappingURL=reset.css.map */

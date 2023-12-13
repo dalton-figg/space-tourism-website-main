@@ -1,0 +1,124 @@
+@import "../scss/helpers/base";
+
+.primary-header {
+  position: relative;
+  padding: calculateRem(24);
+
+  @include max-width(1440px);
+  @include layout(flex, $justify: space-between, $align: center);
+
+  @include media(tablet-small) {
+    padding: 0 0 0 calculateRem(40);
+  }
+
+  @include media(laptop) {
+    padding: calculateRem(40) 0 0 calculateRem(55);
+  }
+}
+
+.primary-decorative {
+  display: none;
+  position: absolute;
+  left: 173px;
+  z-index: 4;
+
+  @include max-width(473px);
+
+  @include media(desktop) {
+    display: flex;
+  }
+}
+
+.primary-burger {
+  @include media(tablet-small) {
+    display: none;
+  }
+}
+
+.primary-nav {
+  background: adjustOpacity($clr-white, 0.1);
+  backdrop-filter: blur(1rem);
+  display: none;
+  height: 96px;
+
+  @include max-width(450px);
+
+  @include media(tablet-small) {
+    @include layout(flex, $justify: center, $align: center);
+  }
+
+  @include media(laptop) {
+    @include max-width(830px);
+  }
+}
+
+.primary-nav__list {
+  list-style: none;
+  @include layout(flex, $gap: calculateRem(32));
+}
+
+.primary-nav__item {
+  position: relative;
+
+  :hover ::after {
+    @include styled-underline(adjustOpacity($clr-white, 0.5));
+  }
+}
+
+.number {
+  display: none;
+  @include weight(bold);
+
+  @include media(laptop) {
+    display: inline-block;
+  }
+}
+
+.primary-nav__item--active::after {
+  @include styled-underline;
+}
+
+.primary-nav__link {
+  text-transform: uppercase;
+  @include link-reset($clr-white);
+  @extend %subheading-nav;
+}
+
+.mobile-nav {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  height: 100vh;
+  background: adjustOpacity($clr-white, 0.1);
+  backdrop-filter: blur(1rem);
+  transition: all 0.35s ease;
+
+  @include max-width(254px);
+  @include layout(flex, $direction: column);
+
+  ul {
+    padding: calculateRem(32);
+    list-style: none;
+    @include layout(
+      flex,
+      $direction: column,
+      $justify: center,
+      $gap: calculateRem(36)
+    );
+  }
+}
+
+.mobile-nav__close {
+  align-self: flex-end;
+  padding: calculateRem(32) calculateRem(32) 0 0;
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 350ms;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
