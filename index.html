@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- SEO -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Space Tourism Website</title>
+
+    <!-- Favicon -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Barlow:ital@0;1&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Page Styles -->
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/global.css" />
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <!-- id='swup' class='transition-fade'> -->
+
+  <body>
+    <header class="primary-header">
+      <div class="primary-logo">
+        <img
+          src="starter-code/assets/shared/logo.svg"
+          width="48"
+          height="48"
+          alt="Space Tourism Logo"
+        />
+      </div>
+      <div class="primary-decorative">
+        <svg viewBox="0 0 473 1">
+          <path fill="#fff" d="M0 0h473v1H0z" opacity=".251" />
+        </svg>
+      </div>
+      <nav class="primary-nav">
+        <ul class="primary-nav__list">
+          <li class="primary-nav__item primary-nav__item--active">
+            <a href="/index.php" class="primary-nav__link">
+              <span class="number">00</span>
+              Home
+            </a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="/destination.php" class="primary-nav__link">
+              <span class="number">01</span>
+              Destination
+            </a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="/crew.php" class="primary-nav__link">
+              <span class="number">02</span>
+              Crew
+            </a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="/technology-vehicle.php" class="primary-nav__link">
+              <span class="number">03</span>
+              Technology
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile-nav" id="js-mobile-nav">
+        <div class="mobile-nav__close" onclick="closeNav()">
+          <img src="/starter-code/assets/shared/icon-close.svg" alt="" />
+        </div>
+        <ul class="mobile-nav__list">
+          <li>
+            <a href="index.php" class="primary-nav__link"
+              ><span class="number">00</span> Home</a
+            >
+          </li>
+          <li>
+            <a href="destination.php" class="primary-nav__link"
+              ><span class="number">01</span> Destination</a
+            >
+          </li>
+          <li>
+            <a href="crew.php" class="primary-nav__link"
+              ><span class="number">02</span> Crew</a
+            >
+          </li>
+          <li>
+            <a href="technology-vehicle.php" class="primary-nav__link"
+              ><span class="number">03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="primary-burger" onclick="openNav()">
+        <img src="/starter-code/assets/shared/icon-hamburger.svg" alt="" />
+      </div>
+    </header>
+    <main class="page | text-center">
+      <div class="page__left | m-0auto">
+        <h1 class="page__title | text-blue heading-5 text-uppercase">
+          So you want to travel to
+          <span class="text-white heading-1">Space</span>
+        </h1>
+        <p class="text-blue">
+          Let&rsquo;s face it; if you want to go to space, you might as well
+          genuinely go to outer space and not hover kind of on the edge of it.
+          Well sit back, and relax because we&rsquo;ll give you a truly out of
+          this world experience!
+        </p>
+      </div>
+
+      <div class="page__right">
+        <a
+          href="destination.php"
+          class="page__cta | text-uppercase text-center heading-4"
+          >Explore</a
+        >
+      </div>
+    </main>
+    <script type="module" src="../js/app.js"></script>
+  </body>
+</html>
