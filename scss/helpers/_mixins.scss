@@ -87,7 +87,7 @@ $weights: (
 @mixin body-image($mobile, $tablet, $desktop) {
   background-image: url($mobile);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 
   @include media(376px) {
     background-image: url($tablet);
@@ -133,7 +133,12 @@ $weights: (
 }
 
 @mixin two-cols {
-  @include layout(grid, $columns: 165px repeat(2, 1fr) 165px);
+  @include media(laptop) {
+    @include layout(grid, $columns: 50px repeat(2, auto) 50px);
+  }
+  @include media(desktop) {
+    @include layout(grid, $columns: 165px repeat(2, auto) 165px);
+  }
 }
 
 @mixin hr-styles($color: red) {

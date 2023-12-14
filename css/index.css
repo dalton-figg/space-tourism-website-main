@@ -1,7 +1,7 @@
 body {
   background-image: url("/starter-code/assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 @media only screen and (min-width: 376px) {
   body {
@@ -22,8 +22,18 @@ body {
   .page {
     text-align: left;
     row-gap: 15.6875rem;
+  }
+}
+@media only screen and (min-width: 64em) and (min-width: 64em) {
+  .page {
     display: grid;
-    grid-template-columns: 165px repeat(2, 1fr) 165px;
+    grid-template-columns: 50px repeat(2, auto) 50px;
+  }
+}
+@media only screen and (min-width: 64em) and (min-width: 90em) {
+  .page {
+    display: grid;
+    grid-template-columns: 165px repeat(2, auto) 165px;
   }
 }
 

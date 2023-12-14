@@ -27,11 +27,23 @@
 }
 
 %heading-3 {
-  @include font-size(56);
+  @include font-size(24);
+
+  @include media(tablet) {
+    @include font-size(40);
+  }
+
+  @include media(laptop) {
+    @include font-size(56);
+  }
 }
 
 %heading-4 {
   @include font-size(20);
+
+  @include media(tablet) {
+    @include font-size(24);
+  }
 
   @include media(laptop) {
     @include font-size(32);

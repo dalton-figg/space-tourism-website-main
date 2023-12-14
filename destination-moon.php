@@ -7,15 +7,19 @@ $stylesheet = '<link rel="stylesheet" href="css/destination.css" />'
 <?php include 'php-partials/navbar.php' ?>
 <main class='destination'>
   <div class='destination__image'>
-    <h1 class="text-uppercase heading-5"><span>01</span> Pick your destination</h1>
-    <img src="/starter-code/assets/destination/image-moon.png" width='170' height='170' alt="">
+    <h1 class="text-uppercase heading-5"><span class='text-white-25'>01</span> Pick your destination</h1>
+    <img src="/starter-code/assets/destination/image-moon.png"  alt="">
   </div>
   <div class="destination__info | text-center m-0auto">
     <nav class="destination__list">
-      <h2><a href="destination-moon.php" class="destination__link <?php if ($subpage == 'moon') echo 'destination__link--active' ?> ">Moon</a></h2>
-      <h2><a href="destination-mars.php" class="destination__link<?php if ($subpage == 'mars') echo 'destination__link--active' ?>">Mars</a></h2>
-      <h2><a href="destination-europa.php" class="destination__link<?php if ($subpage == 'europa') echo 'destination__link--active' ?>">Europa</a></h2>
-      <h2><a href="destination-titan.php" class="destination__link<?php if ($subpage == 'titan') echo 'destination__link--active' ?>">Titan</a></h2>
+      <h2><a href="destination-moon.php" class="destination__link <?php if ($subpage == 'moon') echo 'destination__link--active'
+                                                                  ?> ">Moon</a></h2>
+      <h2><a href="destination-mars.php" class="destination__link<?php if ($subpage == 'mars') echo 'destination__link--active'
+                                                                  ?>">Mars</a></h2>
+      <h2><a href="destination-europa.php" class="destination__link<?php if ($subpage == 'europa') echo 'destination__link--active'
+                                                                    ?>">Europa</a></h2>
+      <h2><a href="destination-titan.php" class="destination__link<?php if ($subpage == 'titan') echo 'destination__link--active'
+                                                                  ?>">Titan</a></h2>
     </nav>
     <h3 class='heading-2 text-uppercase'>Moon</h3>
     <p class='text-blue'>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
@@ -40,5 +44,6 @@ $stylesheet = '<link rel="stylesheet" href="css/destination.css" />'
 <!-- <script src="https://unpkg.com/swup@4"></script>
 <script src="https://unpkg.com/@swup/head-plugin@2"></script> -->
 <script src="../js/app.js"></script>
+<script src="../js/tabs.js"></script>
 
 </html>

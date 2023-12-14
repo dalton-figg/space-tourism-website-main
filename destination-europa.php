@@ -7,8 +7,8 @@ $stylesheet = '<link rel="stylesheet" href="css/destination.css" />'
 <?php include 'php-partials/navbar.php' ?>
 <main class='destination'>
   <div class='destination__image'>
-    <h1 class="text-uppercase heading-5"><span>01</span> Pick your destination</h1>
-    <img src="/starter-code/assets/destination/image-europa.png" width='170' height='170' alt="">
+  <h1 class="text-uppercase heading-5"><span class='text-white-25'>01</span> Pick your destination</h1>
+    <img src="/starter-code/assets/destination/image-europa.png" alt="">
   </div>
   <div class="destination__info | text-center m-0auto">
     <nav class="destination__list">

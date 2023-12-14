@@ -10,6 +10,14 @@
   color: $clr-white;
 }
 
+.text-white-50 {
+  color: adjustOpacity($clr-white, 0.5);
+}
+
+.text-white-25 {
+  color: adjustOpacity($clr-white, 0.25);
+}
+
 .text-center {
   text-align: center;
 }

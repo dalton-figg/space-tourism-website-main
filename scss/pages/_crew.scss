@@ -1,0 +1,110 @@
+body {
+  @include body-image(
+    "/starter-code/assets/crew/background-crew-mobile.jpg",
+    "/starter-code/assets/crew/background-crew-tablet.jpg",
+    "/starter-code/assets/crew/background-crew-desktop.jpg"
+  );
+}
+
+.page__title {
+  text-align: right;
+  padding: 0 calculateRem(54) calculateRem(35) 0;
+
+  @include media(tablet-small) {
+    text-align: left;
+    padding: calculateRem(40) 0 calculateRem(64) calculateRem(38);
+  }
+
+  @include media(laptop) {
+    padding-top: calculateRem(62);
+    padding-left: calculateRem(165);
+  }
+}
+
+.crew {
+  @include layout(flex, $direction: column-reverse, $gap: calculateRem(32));
+
+  @include media(tablet-small) {
+    @include layout($direction: column);
+  }
+
+  @include media(laptop) {
+    @include layout($gap: 0);
+    @include two-cols;
+  }
+}
+
+.crew__copy {
+  align-self: center;
+
+  @include layout(flex, $direction: column, $gap: calculateRem(16), $column: 2);
+
+  @include media(tablet-small) {
+    @include layout($align: center, $gap: calculateRem(20));
+    @include max-width(620px);
+  }
+
+  @include media(laptop) {
+    text-align: left;
+    @include layout(
+      grid,
+      $rows: repeat(3, min-content) 1fr,
+      $gap: calculateRem(32)
+    );
+  }
+
+  @include max-width(320px);
+
+  p:last-of-type {
+    @include max-width(435px);
+  }
+}
+
+.crew__image {
+  @include layout(flex, $justify: center, $column: 3);
+  
+  @include media(laptop) {
+    @include layout($justify: end);
+  }
+
+  img {
+    width: 177px;
+    height: 222px;
+
+    @include media(tablet-small) {
+      width: auto;
+      height: 700px;
+    }
+  }
+}
+
+.glide__bullets {
+  order: -1;
+  align-self: center;
+
+  @include layout(flex, $gap: calculateRem(24));
+
+  @include media(tablet) {
+    order: initial;
+  }
+
+  @include media(laptop) {
+    align-self: end;
+  }
+}
+
+.glide__bullet {
+  border-radius: 50%;
+  width: 10px;
+  aspect-ratio: 1;
+
+  &--active {
+    background: $clr-white;
+  }
+
+  @include appearance-reset(adjustOpacity($clr-white, 0.17));
+
+  @include media(laptop) {
+    width: 15px;
+  }
+}

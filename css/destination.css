@@ -14,7 +14,7 @@
 body {
   background-image: url("/starter-code/assets/destination/background-destination-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 @media only screen and (min-width: 376px) {
   body {
@@ -34,9 +34,19 @@ body {
 }
 @media only screen and (min-width: 64em) {
   .destination {
-    display: grid;
-    grid-template-columns: 165px repeat(2, 1fr) 165px;
     padding-top: 4.75rem;
+  }
+}
+@media only screen and (min-width: 64em) and (min-width: 64em) {
+  .destination {
+    display: grid;
+    grid-template-columns: 50px repeat(2, auto) 50px;
+  }
+}
+@media only screen and (min-width: 64em) and (min-width: 90em) {
+  .destination {
+    display: grid;
+    grid-template-columns: 165px repeat(2, auto) 165px;
   }
 }
 
