@@ -11,14 +11,21 @@ function closeNav() {
 // });
 
 if (document.querySelector(".glide")) {
-  new Glide(".glide").mount();
+  new Glide(".glide", {
+    type: 'carousel',
+    direction: 'ltr',
+    perView: 1,
+    startAt: 0,
+    animationTimingFunc: 'linear',
+    autoplay: 2500
+  }).mount();
 }
 
 // -- Populate via JSON --
 
 import data from "../starter-code/data.json" assert { type: "json" }; // import data from file
 
-const tabs = document.querySelectorAll(".destination__link"); // get tab buttons
+const tabs = document.querySelectorAll(".tab"); // get tab buttons
 
 const pageUrl = window.location.href; // get page URL
 
@@ -43,7 +50,8 @@ const destinationMap = {
 
 if (tabs) {
   tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
+    tab.addEventListener("click", (e) => {
+      e.preventDefault();
       setActive(tab);
       const selectedDestination = destinationMap[tab.innerHTML];
       populateContent(selectedDestination);
@@ -58,10 +66,10 @@ if (pageUrl.endsWith("destination.php")) {
 function setActive(tab) {
   // remove active class from all tabs
   tabs.forEach((tab) => {
-    tab.classList.remove("destination__link--active");
+    tab.classList.remove("tab--active");
   });
   // add active class to clicked class
-  tab.classList.add("destination__link--active");
+  tab.classList.add("tab--active");
 }
 
 // populate

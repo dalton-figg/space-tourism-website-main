@@ -12,10 +12,10 @@ $stylesheet = '<link rel="stylesheet" href="css/destination.css">'
   </div>
   <div class="destination__info | text-center m-0auto">
     <nav class="destination__list">
-      <h2 class="destination__link destination__link--active">Moon</h2>
-      <h2 class="destination__link">Mars</h2>
-      <h2 class="destination__link">Europa</h2>
-      <h2 class="destination__link">Titan</h2>
+      <h2 class="destination__link | tab tab--active">Moon</h2>
+      <h2 class="destination__link | tab">Mars</h2>
+      <h2 class="destination__link | tab">Europa</h2>
+      <h2 class="destination__link | tab">Titan</h2>
     </nav>
     <h3 class='heading-2 text-uppercase' id='name'></h3>
     <p class='text-blue' id='desc'></p>

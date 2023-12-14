@@ -74,23 +74,24 @@ body {
   @extend %subheading-nav;
   @include link-reset($clr-blue);
 
-  &--active {
-    color: $clr-white;
-  }
+}
+
+.tab--active {
+  color: $clr-white;
 }
 
 .destination__link:hover {
   cursor: pointer;
 }
 
-.destination__link:not(.destination__link--active):hover::after {
+.destination__link:not(.tab--active):hover::after {
   @include styled-underline(
     $distance: 30px,
     $background: adjustOpacity($clr-white, 0.5)
   );
 }
 
-.destination__link--active::after {
+.tab--active::after {
   @include styled-underline($distance: 30px);
 }
 

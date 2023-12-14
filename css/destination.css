@@ -109,7 +109,8 @@ body {
   text-decoration: none;
   color: #d0d6f9;
 }
-.destination__link--active {
+
+.tab--active {
   color: #fff;
 }
 
@@ -117,7 +118,7 @@ body {
   cursor: pointer;
 }
 
-.destination__link:not(.destination__link--active):hover::after {
+.destination__link:not(.tab--active):hover::after {
   content: "";
   display: block;
   position: absolute;
@@ -127,7 +128,7 @@ body {
   width: 75%;
 }
 
-.destination__link--active::after {
+.tab--active::after {
   content: "";
   display: block;
   position: absolute;
