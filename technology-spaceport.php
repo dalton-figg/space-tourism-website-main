@@ -1,6 +1,6 @@
 <?php
 $page = 'tech';
-$stylesheet = '<link rel="stylesheet" href="css/technology.css" />';
+$stylesheet = '<link rel="stylesheet" href="css/technology.css">';
 ?>
 
 <?php include 'php-partials/head.php' ?>
@@ -30,7 +30,7 @@ $stylesheet = '<link rel="stylesheet" href="css/technology.css" />';
         </p>
 
         <h2 class='heading-3 text-uppercase'>
-          SPACEPORT
+          Spaceport
         </h2>
 
         <p>
@@ -40,11 +40,15 @@ $stylesheet = '<link rel="stylesheet" href="css/technology.css" />';
     </div>
   </div>
 
-  <div class='tech__image'>
-    <img src="/starter-code/assets/technology/image-spaceport-portrait.jpg" alt="">
 
+  <div class='tech__image'>
+    <picture>
+      <source srcset="/starter-code/assets/technology/image-spaceport-portrait.jpg" media='(min-width: 1024px)'>
+      <img src="/starter-code/assets/technology/image-spaceport-landscape.jpg" width='768' height='310' alt="">
+    </picture>
   </div>
 </main>
+<script src="js/app.js"></script>
 </body>
 
 </html>

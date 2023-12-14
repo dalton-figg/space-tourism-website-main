@@ -51,6 +51,7 @@ body {
 
 .secondary-nav__list {
   padding-top: calculateRem(32);
+  list-style: none;
   @include layout(
     flex,
     $direction: row,
@@ -65,33 +66,32 @@ body {
 }
 
 .secondary-nav__item {
-  aspect-ratio: 1;
-  border: 1px solid adjustOpacity($clr-white, 0.25);
-  border-radius: 50%;
-  cursor: pointer;
-  text-align: center;
-  width: 40px;
-
-  @include layout(flex, $justify: center, $align: center);
-  @extend %heading-4;
-
-  @include media(tablet) {
-    width: 60px;
-  }
-
-  @include media(laptop) {
-    width: 80px;
-  }
-
   a {
+    aspect-ratio: 1;
+    border: 1px solid adjustOpacity($clr-white, 0.25);
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+
+    @include layout(flex, $justify: center, $align: center);
+    @extend %heading-4;
+
+    @include media(tablet) {
+      width: 60px;
+    }
+
+    @include media(laptop) {
+      width: 80px;
+    }
+
     @include link-reset($clr-white);
   }
 }
 
 .secondary-nav__item--active {
-  background: $clr-white;
-
   a {
+    background: $clr-white;
     color: $clr-black;
   }
 }

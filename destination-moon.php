@@ -1,14 +1,14 @@
 <?php
 $page = 'destination';
 $subpage = 'moon';
-$stylesheet = '<link rel="stylesheet" href="css/destination.css" />'
+$stylesheet = '<link rel="stylesheet" href="css/destination.css">'
 ?>
 <?php include 'php-partials/head.php' ?>
 <?php include 'php-partials/navbar.php' ?>
 <main class='destination'>
   <div class='destination__image'>
     <h1 class="text-uppercase heading-5"><span class='text-white-25'>01</span> Pick your destination</h1>
-    <img src="/starter-code/assets/destination/image-moon.png"  alt="">
+    <img src="/starter-code/assets/destination/image-moon.png" alt="">
   </div>
   <div class="destination__info | text-center m-0auto">
     <nav class="destination__list">
@@ -40,10 +40,8 @@ $stylesheet = '<link rel="stylesheet" href="css/destination.css" />'
     </div>
   </div>
 </main>
-</body>
-<!-- <script src="https://unpkg.com/swup@4"></script>
-<script src="https://unpkg.com/@swup/head-plugin@2"></script> -->
 <script src="../js/app.js"></script>
-<script src="../js/tabs.js"></script>
+</body>
+
 
 </html>

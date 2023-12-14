@@ -1,6 +1,6 @@
 <?php
 $page = 'home';
-$stylesheet = '<link rel="stylesheet" href="css/index.css" />';
+$stylesheet = '<link rel="stylesheet" href="css/index.css">';
 ?>
 
 <?php include 'php-partials/head.php' ?>
@@ -20,9 +20,8 @@ $stylesheet = '<link rel="stylesheet" href="css/index.css" />';
     <a href="destination-moon.php" class="page__cta | text-uppercase text-center heading-4">Explore</a>
   </div>
 </main>
-</body>
-<!-- <script src="https://unpkg.com/swup@4"></script>
-<script src="https://unpkg.com/@swup/head-plugin@2"></script> -->
 <script src="../js/app.js"></script>
+</body>
+
 
 </html>

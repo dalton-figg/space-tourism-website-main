@@ -1,7 +1,7 @@
 <?php
 $page = 'crew';
 $subpage = 'moon';
-$stylesheet = '<link rel="stylesheet" href="css/crew.css" /> <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.3.0/dist/css/glide.core.min.css">';
+$stylesheet = '<link rel="stylesheet" href="css/crew.css"> <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.3.0/dist/css/glide.core.min.css">';
 
 $members = [
   [
@@ -70,8 +70,9 @@ $members = [
     </div>
   </div>
 </main>
-</body>
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 <script src='/js/app.js'></script>
+</body>
+
 
 </html>

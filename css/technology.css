@@ -1,20 +1,20 @@
-.secondary-nav__item {
+.secondary-nav__item a {
   font-weight: 400;
   font-family: "Bellefair", "Arial", system-ui, serif;
 }
 
-.secondary-nav__item {
+.secondary-nav__item a {
   font-size: 20px;
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 48em) {
-  .secondary-nav__item {
+  .secondary-nav__item a {
     font-size: 24px;
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 64em) {
-  .secondary-nav__item {
+  .secondary-nav__item a {
     font-size: 32px;
     font-size: 2rem;
   }
@@ -103,6 +103,7 @@ body {
 
 .secondary-nav__list {
   padding-top: 2rem;
+  list-style: none;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -117,7 +118,7 @@ body {
   }
 }
 
-.secondary-nav__item {
+.secondary-nav__item a {
   aspect-ratio: 1;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 50%;
@@ -127,26 +128,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: #fff;
 }
 @media only screen and (min-width: 48em) {
-  .secondary-nav__item {
+  .secondary-nav__item a {
     width: 60px;
   }
 }
 @media only screen and (min-width: 64em) {
-  .secondary-nav__item {
+  .secondary-nav__item a {
     width: 80px;
   }
 }
-.secondary-nav__item a {
-  text-decoration: none;
-  color: #fff;
-}
 
-.secondary-nav__item--active {
-  background: #fff;
-}
 .secondary-nav__item--active a {
+  background: #fff;
   color: #0b0d17;
 }
 

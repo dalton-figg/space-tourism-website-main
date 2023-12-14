@@ -1,6 +1,6 @@
 <?php
 $page = 'tech';
-$stylesheet = '<link rel="stylesheet" href="css/technology.css" />';
+$stylesheet = '<link rel="stylesheet" href="css/technology.css">';
 ?>
 
 <?php include 'php-partials/head.php' ?>
@@ -50,6 +50,7 @@ $stylesheet = '<link rel="stylesheet" href="css/technology.css" />';
     </picture>
   </div>
 </main>
-</body>
 <script src="js/app.js"></script>
+</body>
+
 </html>

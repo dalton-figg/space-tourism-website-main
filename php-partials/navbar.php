@@ -1,6 +1,6 @@
 <header class="primary-header">
   <div class="primary-logo">
-    <img src="starter-code/assets/shared/logo.svg" width="48" height="48" alt="Space Tourism Logo" />
+    <img src="starter-code/assets/shared/logo.svg" width="48" height="48" alt="Space Tourism Logo">
   </div>
   <div class="primary-decorative">
     <svg viewBox="0 0 473 1">
@@ -37,7 +37,7 @@
   </nav>
   <nav class="mobile-nav" id="js-mobile-nav">
     <div class="mobile-nav__close" onclick="closeNav()">
-      <img src="/starter-code/assets/shared/icon-close.svg" alt="" />
+      <img src="/starter-code/assets/shared/icon-close.svg" alt="">
     </div>
     <ul class="mobile-nav__list">
       <li>
@@ -55,6 +55,6 @@
     </ul>
   </nav>
   <div class="primary-burger" onclick="openNav()">
-    <img src="/starter-code/assets/shared/icon-hamburger.svg" alt="" />
+    <img src="/starter-code/assets/shared/icon-hamburger.svg" alt="">
   </div>
 </header>

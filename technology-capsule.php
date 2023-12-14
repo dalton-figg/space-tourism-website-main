@@ -1,6 +1,6 @@
 <?php
 $page = 'tech';
-$stylesheet = '<link rel="stylesheet" href="css/technology.css" />';
+$stylesheet = '<link rel="stylesheet" href="css/technology.css">';
 ?>
 
 <?php include 'php-partials/head.php' ?>
@@ -41,10 +41,13 @@ $stylesheet = '<link rel="stylesheet" href="css/technology.css" />';
   </div>
 
   <div class='tech__image'>
-    <img src="/starter-code/assets/technology/image-space-capsule-portrait.jpg" alt="">
-
+    <picture>
+      <source srcset="/starter-code/assets/technology/image-space-capsule-portrait.jpg" media='(min-width: 1024px)'>
+      <img src="/starter-code/assets/technology/image-space-capsule-landscape.jpg" alt="">
+    </picture>
   </div>
 </main>
+<script src="js/app.js"></script>
 </body>
 
 </html>
