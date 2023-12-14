@@ -79,6 +79,10 @@ body {
   }
 }
 
+.destination__link:hover {
+  cursor: pointer;
+}
+
 .destination__link:not(.destination__link--active):hover::after {
   @include styled-underline(
     $distance: 30px,

@@ -16,7 +16,7 @@
         </a>
       </li>
       <li class="primary-nav__item <?php if ($page == 'destination') echo 'primary-nav__item--active' ?>">
-        <a href="/destination-moon.php" class="primary-nav__link">
+        <a href="/destination.php" class="primary-nav__link">
           <span class="number">01</span>
           Destination
         </a>
@@ -44,7 +44,7 @@
         <a href="index.php" class="primary-nav__link"><span class="number">00</span> Home</a>
       </li>
       <li>
-        <a href="destination-moon.php" class="primary-nav__link"><span class="number">01</span> Destination</a>
+        <a href="destination.php" class="primary-nav__link"><span class="number">01</span> Destination</a>
       </li>
       <li>
         <a href="crew.php" class="primary-nav__link"><span class="number">02</span> Crew</a>

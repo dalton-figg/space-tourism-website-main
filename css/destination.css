@@ -113,6 +113,10 @@ body {
   color: #fff;
 }
 
+.destination__link:hover {
+  cursor: pointer;
+}
+
 .destination__link:not(.destination__link--active):hover::after {
   content: "";
   display: block;

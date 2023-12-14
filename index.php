@@ -17,10 +17,10 @@ $stylesheet = '<link rel="stylesheet" href="css/index.css">';
   </div>
 
   <div class="page__right">
-    <a href="destination-moon.php" class="page__cta | text-uppercase text-center heading-4">Explore</a>
+    <a href="destination.php" class="page__cta | text-uppercase text-center heading-4">Explore</a>
   </div>
 </main>
-<script src="../js/app.js"></script>
+<script type='module' src="../js/app.js"></script>
 </body>
 
 

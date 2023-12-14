@@ -48,7 +48,7 @@ $stylesheet = '<link rel="stylesheet" href="css/technology.css">';
     </picture>
   </div>
 </main>
-<script src="js/app.js"></script>
+<script type='module' src="js/app.js"></script>
 </body>
 
 </html>
