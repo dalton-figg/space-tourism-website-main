@@ -1,0 +1,109 @@
+body {
+  @include body-image(
+    "/starter-code/assets/technology/background-technology-mobile.jpg",
+    "/starter-code/assets/technology/background-technology-tablet.jpg",
+    "/starter-code/assets/technology/background-technology-desktop.jpg"
+  );
+}
+
+.tech {
+  @include layout(flex, $direction: column-reverse);
+  @include two-cols;
+  @include media(laptop) {
+    padding-top: calculateRem(76);
+  }
+}
+
+.tech__flex {
+  margin: 0 auto;
+  @include max-width(327px);
+  @include layout(flex, $direction: column, $gap: calculateRem(16));
+
+  @include media(tablet) {
+    @include layout($gap: calculateRem(32));
+    @include max-width(458px);
+  }
+
+  @include media(laptop) {
+    margin: 0;
+    max-width: none;
+    @include layout($direction: row, $gap: calculateRem(80));
+  }
+}
+
+@include media(laptop) {
+  .tech__flex,
+  .tech__image {
+    padding-top: calculateRem(143);
+  }
+}
+
+.tech__text {
+  margin: 0 auto;
+  text-align: center;
+  @include layout($column: 2);
+  @include max-width(645px);
+
+  @include media(laptop) {
+    text-align: left;
+  }
+}
+
+.secondary-nav__list {
+  padding-top: calculateRem(32);
+  @include layout(
+    flex,
+    $direction: row,
+    $justify: center,
+    $gap: calculateRem(16)
+  );
+
+  @include media(laptop) {
+    padding: 0;
+    @include layout(flex, $direction: column, $gap: calculateRem(32));
+  }
+}
+
+.secondary-nav__item {
+  aspect-ratio: 1;
+  border: 1px solid adjustOpacity($clr-white, 0.25);
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  width: 40px;
+
+  @include layout(flex, $justify: center, $align: center);
+  @extend %heading-4;
+
+  @include media(tablet) {
+    width: 60px;
+  }
+
+  @include media(laptop) {
+    width: 80px;
+  }
+
+  a {
+    @include link-reset($clr-white);
+  }
+}
+
+.secondary-nav__item--active {
+  background: $clr-white;
+
+  a {
+    color: $clr-black;
+  }
+}
+
+.tech__image {
+  margin-left: auto;
+  padding-block: calculateRem(32);
+
+  @include layout($column: 3 / span 2);
+
+  @include media(laptop) {
+    padding: 0;
+    padding-top: calculateRem(32);
+  }
+}

@@ -17,6 +17,9 @@ body {
 
   @include media(laptop) {
     padding-top: calculateRem(62);
+    padding-left: calculateRem(50);
+  }
+  @include media(desktop) {
     padding-left: calculateRem(165);
   }
 }
@@ -48,7 +51,6 @@ body {
     text-align: left;
     @include layout(
       grid,
-      $rows: repeat(3, min-content) 1fr,
       $gap: calculateRem(32)
     );
   }
@@ -62,7 +64,7 @@ body {
 
 .crew__image {
   @include layout(flex, $justify: center, $column: 3);
-  
+
   @include media(laptop) {
     @include layout($justify: end);
   }

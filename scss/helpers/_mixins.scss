@@ -134,16 +134,16 @@ $weights: (
 
 @mixin two-cols {
   @include media(laptop) {
-    @include layout(grid, $columns: 50px repeat(2, minmax(auto, 40rem)) 50px);
+    @include layout(grid, $columns: 50px repeat(2, 1fr) 50px);
   }
   @include media(desktop) {
-    @include layout(grid, $columns: 165px repeat(2, minmax(auto, 40rem)) 165px);
+    @include layout(grid, $columns: 165px repeat(2, auto) 165px);
   }
 }
 
 @mixin hr-styles($color: red) {
   height: 1px;
-  // removes weird double oreder
+  // removes weird double border
   border-style: solid;
   // adds color to each property for browser support
   border-color: $color;
