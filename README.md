@@ -42,8 +42,6 @@ I learned a lot about planning a project and making code resuable, especially wi
 
 I also learnt how to extract data from a json file and use it to populate pages as an alternative to using a proper tabs system.
 
-To see how you can add code snippets, see below:
-
 ```php
 <?php foreach ($members as $member) : ?>
     <li class="glide__slide">
