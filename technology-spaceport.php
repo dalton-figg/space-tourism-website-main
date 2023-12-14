@@ -49,6 +49,6 @@ $stylesheet = '<link rel="stylesheet" href="css/technology.css">';
   </div>
 </main>
 <script type='module' src="js/app.js"></script>
-</body> 
+</body>
 
 </html>

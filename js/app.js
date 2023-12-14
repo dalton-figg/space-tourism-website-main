@@ -12,12 +12,12 @@ function closeNav() {
 
 if (document.querySelector(".glide")) {
   new Glide(".glide", {
-    type: 'carousel',
-    direction: 'ltr',
+    type: "carousel",
+    direction: "ltr",
     perView: 1,
     startAt: 0,
-    animationTimingFunc: 'linear',
-    autoplay: 2500
+    animationTimingFunc: "linear",
+    autoplay: 2500,
   }).mount();
 }
 
