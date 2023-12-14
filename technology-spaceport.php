@@ -44,7 +44,7 @@ $stylesheet = '<link rel="stylesheet" href="css/technology.css">';
   <div class='tech__image'>
     <picture>
       <source srcset="/starter-code/assets/technology/image-spaceport-portrait.jpg" media='(min-width: 1024px)'>
-      <img src="/starter-code/assets/technology/image-spaceport-landscape.jpg" width='768' height='310' alt="">
+      <img src="/starter-code/assets/technology/image-spaceport-landscape.jpg" width='515' height='527' alt="">
     </picture>
   </div>
 </main>

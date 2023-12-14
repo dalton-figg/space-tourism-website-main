@@ -20,6 +20,8 @@ import data from "../starter-code/data.json" assert { type: "json" }; // import 
 
 const tabs = document.querySelectorAll(".destination__link"); // get tab buttons
 
+const pageUrl = window.location.href; // get page URL
+
 // set variables for each component to populate
 
 const titleElement = document.getElementById("name");
@@ -49,7 +51,9 @@ if (tabs) {
   });
 }
 
-populateContent(data.destinations[0]); // populate moon page by default
+if (pageUrl.endsWith("destination.php")) {
+  populateContent(data.destinations[0]); // populate moon page by default
+}
 
 function setActive(tab) {
   // remove active class from all tabs
